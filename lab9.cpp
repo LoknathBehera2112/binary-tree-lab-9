@@ -6,7 +6,7 @@ class node{
      node *parent;
      node *left;
      node *right;
-     int data;
+     int data;//Praneet Nandan, 1711096
     node(){
      parent=left=right=NULL;
      data=0;
@@ -30,7 +30,7 @@ class BStree{
    {node *temp=new node;
    temp->data=x;
    temp->parent=temp->left=temp->right=NULL;
-
+//Praneet Nandan, 1711096
    if(root==NULL)
    { root=temp;
    }
@@ -60,7 +60,7 @@ class BStree{
   else
   cout<<"\nElement exists";
  }
-
+//Praneet Nandan, 1711096
  void display(node *temp){
 
       if(temp==NULL)
@@ -103,12 +103,12 @@ node* searchNode(int dt)
     else
       check = check->right;
    }
-
+//Praneet Nandan, 1711096
   }
 
 }
 
-
+//Praneet Nandan, 1711096
 void deleteNode(int s)
 {
 
@@ -162,7 +162,7 @@ void deleteNode(int s)
     }
    //if it has two children
    else
-   {node* temp=curr->right;
+   {node* temp=curr->right;//Praneet Nandan, 1711096
     while(temp->left!=NULL)
      {temp=temp->left;}
      //temp has the element we want to replace
@@ -198,7 +198,7 @@ void counting (node* temp)
  }
 
 
-
+//Praneet Nandan, 1711096
 
 
  };
@@ -213,7 +213,7 @@ void counting (node* temp)
  cout<<"\n5.RANGE SEARCH";
  cout<<"\n6.COUNTING THE ELEMENTS";
  cout<<"\n7.EXIT";
-
+//Praneet Nandan, 1711096
 int ch,x;
 do{
   cout<<"\nenter your choice (1-7): ";
